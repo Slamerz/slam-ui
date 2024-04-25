@@ -1,0 +1,25 @@
+{
+  "name": "@slam-ui/core",
+  "version": "0.0.3",
+  "description": "",
+  "source": "./src/index.ts",
+  "default": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*.css"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "version:patch": "npm version patch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0"
+  }
+}

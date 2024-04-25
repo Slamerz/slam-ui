@@ -1,0 +1,26 @@
+{
+  "name": "@slam-ui/button",
+  "version": "0.0.2",
+  "description": "",
+  "source": "./src/index.ts",
+  "default": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "version:patch": "pnpm version patch"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "@/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0"
+  }
+}
